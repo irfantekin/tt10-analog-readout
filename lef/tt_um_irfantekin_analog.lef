@@ -34,8 +34,6 @@ MACRO tt_um_irfantekin_analog
   PIN ua[0]
     DIRECTION INOUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 1.500000 ;
-    ANTENNADIFFAREA 16.500000 ;
     PORT
       LAYER met4 ;
         RECT 151.810 0.000 152.710 1.000 ;
@@ -44,7 +42,6 @@ MACRO tt_um_irfantekin_analog
   PIN ua[1]
     DIRECTION INOUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 1.500000 ;
     PORT
       LAYER met4 ;
         RECT 132.490 0.000 133.390 1.000 ;
@@ -3678,11 +3675,9 @@ MACRO tt_um_irfantekin_analog
         RECT 104.100 62.800 104.850 87.150 ;
         RECT 104.100 61.450 153.000 62.800 ;
         RECT 102.950 53.900 133.700 55.200 ;
-        RECT 132.050 1.600 133.700 53.900 ;
-        RECT 132.500 1.000 133.400 1.600 ;
-        RECT 151.550 1.400 153.000 61.450 ;
+        RECT 132.050 2.850 133.700 53.900 ;
+        RECT 151.550 2.850 153.000 61.450 ;
         RECT 133.390 0.000 133.400 1.000 ;
-        RECT 151.800 1.000 152.700 1.400 ;
         RECT 151.800 0.000 151.810 1.000 ;
   END
 END tt_um_irfantekin_analog
