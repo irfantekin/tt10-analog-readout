@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1772974941
+timestamp 1772999249
 << nwell >>
 rect -31 475 1014 1170
 << nmos >>
@@ -618,13 +618,4 @@ rect 95 -365 905 -355
 rect 95 -440 175 -365
 rect 840 -440 905 -365
 rect 95 -450 905 -440
-<< labels >>
-rlabel locali 79 460 99 480 1 clkin
-port 1 n default input
-rlabel metal2 719 -230 774 -175 1 pdvcin
-port 2 n default input
-rlabel locali 864 460 884 480 1 pdout
-port 3 n default output
-rlabel metal3 345 1065 647 1146 1 Vdd
-rlabel metal4 220 -450 615 -355 5 Gnd
 << end >>

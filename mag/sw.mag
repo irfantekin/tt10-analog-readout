@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1772975843
+timestamp 1772999249
 << nwell >>
 rect -390 -710 90 580
 rect -390 -2620 90 -1910
@@ -605,27 +605,4 @@ rect -325 -1270 25 -1250
 rect -325 -1330 -290 -1270
 rect -10 -1330 25 -1270
 rect -325 -1350 25 -1330
-<< labels >>
-rlabel metal1 -330 -1880 -280 -1830 1 pi
-port 3 n default input
-rlabel metal1 -330 -780 -280 -730 1 pi
-port 3 n default input
-rlabel metal1 -320 610 -270 660 1 pi
-port 3 n default input
-rlabel metal1 -60 620 -10 670 1 sw1sw
-port 4 n default input
-rlabel metal1 -60 -800 -10 -750 1 sw2sw
-port 5 n default input
-rlabel metal1 -60 -1870 -10 -1820 1 sw3sw
-port 6 n default input
-rlabel locali 10 580 50 620 1 sw1o
-port 7 n default output
-rlabel locali 10 -750 50 -710 1 sw2o
-port 8 n default output
-rlabel locali 10 -1910 50 -1870 1 sw3o
-port 9 n default output
-rlabel metal3 -290 -2580 -10 -2520 5 Vdd
-rlabel metal3 -270 -100 -30 -30 1 Vdd
-rlabel metal4 -240 1140 -60 1220 1 Gnd
-rlabel metal4 -225 -1335 -80 -1265 1 Gnd
 << end >>

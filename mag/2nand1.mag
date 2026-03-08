@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1772976327
+timestamp 1772999249
 << nwell >>
 rect -30 50 320 1365
 << nmos >>
@@ -162,9 +162,4 @@ rect -235 -695 -40 -670
 rect -235 -775 -210 -695
 rect -65 -775 -40 -695
 rect -235 -800 -40 -775
-<< labels >>
-rlabel locali 280 -60 320 -20 1 nandout
-port 3 n default output
-rlabel metal4 -195 -785 -80 -685 5 Gnd
-rlabel metal3 60 1145 225 1265 1 Vdd
 << end >>
