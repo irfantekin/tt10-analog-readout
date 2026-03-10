@@ -1,9 +1,9 @@
 # Tiny Tapeout project information
 project:
-  title:        ""      # tt_um_irfantekin_analog
-  author:       ""      # irfan tekin
+  title:        "tt_um_irfantekin_analog"      # tt_um_irfantekin_analog
+  author:       "irfan tekin"      # irfan tekin
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  ""      # One line description of what your project does
+  description:  "Analog Readout Circuit"      # One line description of what your project does
   language:     "Analog" # other examples include Verilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
