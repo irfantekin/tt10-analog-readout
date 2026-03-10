@@ -1,0 +1,646 @@
+* SPICE3 file created from tt_um_flat.ext - technology: sky130A
+
+
+
+.lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+Vpower VDPWR VGND 1.8
+Vgnd VGND 0 DC 0
+
+V2 ui_in[1] VGND 0
+V3 ui_in[2] VGND 1.8
+V4 clk VGND pulse(0 1.8 100n 1n 1n 25n 50n)
+V5 ui_in[0] VGND 0
+
+
+
+
+.ic V("ua[1]")=0
+
+
+V9 uio_in[0] VGND 0
+V10 uio_in[1] VGND 1.8
+V11 uio_in[2] VGND 0
+V12 uio_in[3] VGND 0
+V13 uio_in[4] VGND 0
+V14 ui_in[3] VGND 0
+V15 ui_in[4] VGND 1.8
+V16 ui_in[5] VGND 0
+V17 ui_in[6] VGND 0
+V18 ua[0] VGND 0.3
+
+
+V20 rst_n VGND pulse(0 1.8 80n 1n 1n 10ms 10ms)
+
+
+
+
+X0 a_19910_28700# uo_out[1] a_19750_28700# VDPWR sky130_fd_pr__pfet_01v8 ad=1.5 pd=6.2 as=0.75 ps=3.1 w=2.5 l=0.2
+X1 newdene_0.AND_0.b a_17810_14890# a_18910_14490# VDPWR sky130_fd_pr__pfet_01v8 ad=2.6 pd=9.3 as=2.6 ps=9.3 w=4 l=0.4
+X2 a_19710_24700# newdene_0.AND_0.out a_19530_24700# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.3 ps=1.6 w=1 l=0.3
+X3 VGND a_18230_28660# a_18110_29600# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.2
+X4 VDPWR newdene_0.AND_0.out a_17290_25120# VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.45 ps=2.1 w=1.5 l=0.3
+X5 VDPWR a_7190_27660# a_7010_26360# VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.45 ps=2.1 w=1.5 l=0.3
+X6 a_17570_27340# a_17470_27660# a_17390_27340# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.3 ps=1.6 w=1 l=0.3
+X7 a_22050_28700# a_20990_30640# a_21890_29600# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.2
+X8 a_19750_29600# uo_out[1] VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.2
+X9 VGND uio_in[2] a_9350_14670# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.6 ps=3.2 w=1 l=6.5
+X10 a_19610_27660# rst_n a_20450_24700# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.3
+X11 a_7850_24700# a_7110_25260# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.3
+X12 a_14570_30640# a_14250_30640# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.42 pd=2.6 as=0.42 ps=2.6 w=0.7 l=0.2
+X13 a_7110_26660# a_7010_26360# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.3
+X14 VDPWR a_21570_25120# uo_out[0] VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.45 ps=2.1 w=1.5 l=0.3
+X15 a_18850_30640# a_18530_30640# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.72 pd=3.6 as=0.36 ps=1.8 w=1.2 l=0.2
+X16 a_21570_25120# rst_n a_21850_26660# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.3
+X17 a_17030_14850# a_17030_14850# a_16910_15670# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.6 ps=3.2 w=1 l=0.2
+X18 VDPWR ui_in[2] a_15220_15010# VDPWR sky130_fd_pr__pfet_01v8 ad=1.2 pd=5.2 as=1.2 ps=5.2 w=2 l=0.2
+X19 a_12110_30640# uo_out[5] a_12110_30260# VGND sky130_fd_pr__nfet_01v8 ad=0.42 pd=2.6 as=0.21 ps=1.3 w=0.7 l=0.2
+X20 a_22410_26660# uo_out[0] VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.3
+X21 a_13190_27660# rst_n VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.2 as=0.45 ps=2.1 w=1.5 l=0.3
+X22 a_18530_30640# uo_out[2] a_18530_30260# VGND sky130_fd_pr__nfet_01v8 ad=0.42 pd=2.6 as=0.21 ps=1.3 w=0.7 l=0.2
+X23 a_15250_25260# a_15150_25120# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.9 ps=4.2 w=1.5 l=0.3
+X24 a_8730_26360# a_8730_25120# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.2 as=0.45 ps=2.1 w=1.5 l=0.3
+X25 a_9750_24700# a_9210_28700# a_9570_24700# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.3 ps=1.6 w=1 l=0.3
+X26 a_10970_25260# a_11050_27660# a_11150_24700# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.3
+X27 VDPWR a_13190_27660# a_13010_26360# VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.45 ps=2.1 w=1.5 l=0.3
+X28 a_17590_11340# clk VGND VGND sky130_fd_pr__nfet_01v8 ad=0.15 pd=1.1 as=0.3 ps=2.2 w=0.5 l=0.2
+X29 a_13850_24700# a_13110_25260# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.3
+X30 a_11710_26000# rst_n a_11890_26660# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.3
+X31 a_17390_25260# a_17470_27660# a_17570_24700# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.3
+X32 a_11710_26000# uo_out[5] VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.9 ps=4.2 w=1.5 l=0.3
+X33 a_15150_25120# rst_n VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.2 as=0.45 ps=2.1 w=1.5 l=0.3
+X34 a_15060_8890# a_15340_7950# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.9 pd=3.6 as=0.9 ps=3.6 w=3 l=0.15
+X35 a_13110_26660# a_13010_26360# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.3
+X36 VGND a_17890_17370# a_17810_14890# VGND sky130_fd_pr__nfet_01v8 ad=3 pd=11.2 as=3 ps=11.2 w=5 l=0.15
+X37 a_11710_27340# VDPWR VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.3
+X38 a_18130_24700# a_17390_25260# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.3
+X39 a_15150_26360# a_15150_25120# a_15430_27340# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.3
+X40 VDPWR a_19610_27660# a_19430_26360# VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.45 ps=2.1 w=1.5 l=0.3
+X41 a_11350_28700# uo_out[5] a_11190_28700# VDPWR sky130_fd_pr__pfet_01v8 ad=1.5 pd=6.2 as=0.75 ps=3.1 w=2.5 l=0.2
+X42 VDPWR a_22510_28660# a_22390_28700# VDPWR sky130_fd_pr__pfet_01v8 ad=1.5 pd=6.2 as=0.75 ps=3.1 w=2.5 l=0.2
+X43 VDPWR a_15340_7950# a_15060_8890# VDPWR sky130_fd_pr__pfet_01v8 ad=1.8 pd=7.2 as=0.9 ps=3.6 w=3 l=0.15
+X44 a_18130_26000# rst_n a_18310_26660# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.3
+X45 VGND a_10910_11230# a_10910_11230# VGND sky130_fd_pr__nfet_01v8 ad=2.25 pd=10 as=2.25 ps=10 w=4.5 l=0.15
+X46 a_9570_24700# a_8830_25260# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.3
+X47 a_7110_25260# a_7010_25120# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.9 ps=4.2 w=1.5 l=0.3
+X48 uo_out[7] VDPWR VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.9 ps=4.2 w=1.5 l=0.3
+X49 a_19530_26660# a_19430_26360# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.3
+X50 uo_out[1] a_20270_26000# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.2 as=0.45 ps=2.1 w=1.5 l=0.3
+X51 a_21670_25260# a_21750_27660# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.2 as=0.45 ps=2.1 w=1.5 l=0.3
+X52 a_20670_30640# a_18850_30640# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.36 pd=1.8 as=0.72 ps=3.6 w=1.2 l=0.2
+X53 VGND a_11810_28660# a_11690_29600# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.2
+X54 a_17770_28700# uo_out[2] a_17610_28700# VDPWR sky130_fd_pr__pfet_01v8 ad=1.5 pd=6.2 as=0.75 ps=3.1 w=2.5 l=0.2
+X55 a_20450_26660# a_19530_25260# a_20270_26660# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.3 ps=1.6 w=1 l=0.3
+X56 a_21750_27660# a_21670_25260# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.9 ps=4.2 w=1.5 l=0.3
+X57 VDPWR uo_out[4] a_14250_30640# VDPWR sky130_fd_pr__pfet_01v8 ad=0.36 pd=1.8 as=0.36 ps=1.8 w=1.2 l=0.2
+X58 VDPWR uo_out[7] a_7950_28660# VDPWR sky130_fd_pr__pfet_01v8 ad=1.5 pd=6.2 as=1.5 ps=6.2 w=2.5 l=0.2
+X59 a_15120_13110# a_14110_12480# ua[1] VDPWR sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.1 as=1.5 ps=6.2 w=2.5 l=0.15
+X60 a_17570_24700# newdene_0.AND_0.out a_17390_24700# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.3 ps=1.6 w=1 l=0.3
+X61 a_13750_8860# a_12280_12070# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=3 pd=11.2 as=3 ps=11.2 w=5 l=0.2
+X62 a_15060_8890# a_14110_8860# ua[1] VDPWR sky130_fd_pr__pfet_01v8 ad=1.8 pd=6.6 as=3.6 ps=13.2 w=6 l=0.15
+X63 a_7010_25120# rst_n VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.2 as=0.45 ps=2.1 w=1.5 l=0.3
+X64 a_7010_26360# a_7010_25120# a_7290_27340# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.3
+X65 a_9210_28700# uo_out[7] a_9050_29600# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.2
+X66 a_7330_28700# a_6950_28700# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.1 as=1.5 ps=6.2 w=2.5 l=0.2
+X67 VDPWR ui_in[1] a_14110_12480# VDPWR sky130_fd_pr__pfet_01v8 ad=3 pd=11.2 as=1.5 ps=5.6 w=5 l=0.2
+X68 a_22410_26000# rst_n VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.2 as=0.45 ps=2.1 w=1.5 l=0.3
+X69 a_20270_26660# uo_out[1] VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.3
+X70 VDPWR a_8730_25120# uo_out[6] VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.45 ps=2.1 w=1.5 l=0.3
+X71 a_7830_29600# a_6950_28700# a_7490_28700# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.2
+X72 a_10870_26360# a_10870_25120# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.2 as=0.45 ps=2.1 w=1.5 l=0.3
+X73 uo_out[0] a_22410_26000# a_22590_27340# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.3
+X74 a_11050_27660# rst_n VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.2 as=0.45 ps=2.1 w=1.5 l=0.3
+X75 a_11150_26660# newdene_0.AND_0.out a_10970_26660# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.3 ps=1.6 w=1 l=0.3
+X76 a_13110_25260# a_13010_25120# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.9 ps=4.2 w=1.5 l=0.3
+X77 a_16390_30640# uo_out[3] a_16390_30260# VGND sky130_fd_pr__nfet_01v8 ad=0.42 pd=2.6 as=0.21 ps=1.3 w=0.7 l=0.2
+X78 uo_out[4] VDPWR VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.9 ps=4.2 w=1.5 l=0.3
+X79 a_7750_10880# newdene_0.AND_0.b clk VGND sky130_fd_pr__nfet_01v8 ad=6 pd=21.2 as=6 ps=21.2 w=10 l=0.2
+X80 a_17290_26360# a_17290_25120# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.2 as=0.45 ps=2.1 w=1.5 l=0.3
+X81 a_17470_27660# rst_n VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.2 as=0.45 ps=2.1 w=1.5 l=0.3
+X82 uo_out[2] VDPWR VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.9 ps=4.2 w=1.5 l=0.3
+X83 a_9350_14670# ui_in[1] a_15240_13040# VGND sky130_fd_pr__nfet_01v8 ad=2.4 pd=9.2 as=2.4 ps=9.2 w=4 l=0.2
+X84 VDPWR uo_out[4] a_13950_28660# VDPWR sky130_fd_pr__pfet_01v8 ad=1.5 pd=6.2 as=1.5 ps=6.2 w=2.5 l=0.2
+X85 a_19530_25260# a_19430_25120# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.9 ps=4.2 w=1.5 l=0.3
+X86 a_10740_11990# a_10440_11990# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=2.5 pd=11 as=2.5 ps=11 w=5 l=0.15
+X87 uo_out[6] VDPWR VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.9 ps=4.2 w=1.5 l=0.3
+X88 a_12280_10390# a_11040_11990# VGND VGND sky130_fd_pr__nfet_01v8 ad=3.5 pd=15 as=3.5 ps=15 w=7 l=0.4
+X89 a_9010_26660# newdene_0.AND_0.out a_8830_26660# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.3 ps=1.6 w=1 l=0.3
+X90 a_10140_11990# a_9840_11990# VGND VGND sky130_fd_pr__nfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=0.15
+X91 a_11710_24700# a_10970_25260# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.3
+X92 VDPWR a_19910_28700# a_19610_27660# VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.45 ps=2.1 w=1.5 l=0.3
+X93 a_15250_25260# a_15330_27660# a_15430_24700# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.3
+X94 a_13010_25120# rst_n VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.2 as=0.45 ps=2.1 w=1.5 l=0.3
+X95 a_13750_11390# a_12280_12070# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=3 pd=11.2 as=3 ps=11.2 w=5 l=0.2
+X96 a_13010_26360# a_13010_25120# a_13290_27340# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.3
+X97 a_13330_28700# a_12950_28700# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.1 as=1.5 ps=6.2 w=2.5 l=0.2
+X98 a_17230_28700# a_16710_30640# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=1.5 pd=6.2 as=1.5 ps=6.2 w=2.5 l=0.2
+X99 VDPWR a_17470_27660# a_17290_26360# VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.45 ps=2.1 w=1.5 l=0.3
+X100 VDPWR rst_n a_14750_10750# VDPWR sky130_fd_pr__pfet_01v8 ad=3 pd=11.2 as=3 ps=11.2 w=5 l=0.2
+X101 a_15990_26000# uo_out[3] VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.9 ps=4.2 w=1.5 l=0.3
+X102 a_19430_25120# rst_n VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.2 as=0.45 ps=2.1 w=1.5 l=0.3
+X103 a_8670_28700# uo_out[7] VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=1.5 pd=6.2 as=1.5 ps=6.2 w=2.5 l=0.2
+X104 a_17390_26660# a_17290_26360# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.3
+X105 a_13830_29600# a_12950_28700# a_13490_28700# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.2
+X106 VDPWR a_7750_10880# a_12280_12070# VDPWR sky130_fd_pr__pfet_01v8 ad=4.9 pd=20.6 as=5.155 ps=19.2 w=9.8 l=0.4
+X107 a_15990_27340# VDPWR VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.3
+X108 a_19430_26360# a_19430_25120# a_19710_27340# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.3
+X109 VDPWR a_9670_28660# a_9550_28700# VDPWR sky130_fd_pr__pfet_01v8 ad=1.5 pd=6.2 as=0.75 ps=3.1 w=2.5 l=0.2
+X110 VDPWR a_7110_25260# a_7850_26000# VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.45 ps=2.1 w=1.5 l=0.3
+X111 a_21510_28700# a_20990_30640# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.6 ps=3.2 w=1 l=0.2
+X112 a_9050_28700# a_8670_28700# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.1 as=1.5 ps=6.2 w=2.5 l=0.2
+X113 VGND a_9710_11230# a_9710_11230# VGND sky130_fd_pr__nfet_01v8 ad=2.25 pd=10 as=2.25 ps=10 w=4.5 l=0.15
+X114 a_18110_29600# a_17230_28700# a_17770_28700# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.2
+X115 a_19610_27660# a_19530_25260# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.9 ps=4.2 w=1.5 l=0.3
+X116 VDPWR uo_out[5] a_12110_30640# VDPWR sky130_fd_pr__pfet_01v8 ad=0.36 pd=1.8 as=0.36 ps=1.8 w=1.2 l=0.2
+X117 VDPWR newdene_0.AND_0.out a_21570_25120# VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.45 ps=2.1 w=1.5 l=0.3
+X118 a_8030_27340# a_7010_25120# a_7850_27340# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.3 ps=1.6 w=1 l=0.3
+X119 a_21850_27340# a_21750_27660# a_21670_27340# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.3 ps=1.6 w=1 l=0.3
+X120 a_9550_29600# a_8670_28700# a_9210_28700# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.2
+X121 VDPWR newdene_0.AND_0.out a_10970_25260# VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.45 ps=2.1 w=1.5 l=0.3
+X122 VDPWR a_19550_14370# a_19550_14370# VDPWR sky130_fd_pr__pfet_01v8 ad=2.4 pd=9.2 as=2.4 ps=9.2 w=4 l=0.15
+X123 a_7110_25260# a_7190_27660# a_7290_24700# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.3
+X124 VDPWR uo_out[2] a_18530_30640# VDPWR sky130_fd_pr__pfet_01v8 ad=0.36 pd=1.8 as=0.36 ps=1.8 w=1.2 l=0.2
+X125 a_12110_30260# a_10290_30640# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.21 pd=1.3 as=0.42 ps=2.6 w=0.7 l=0.2
+X126 a_21750_27660# rst_n a_22590_24700# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.3
+X127 a_11040_11990# a_10740_11990# a_10910_11230# VGND sky130_fd_pr__nfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=0.15
+X128 VDPWR newdene_0.AND_0.out a_8830_25260# VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.45 ps=2.1 w=1.5 l=0.3
+X129 a_21570_25120# a_21570_26360# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.9 ps=4.2 w=1.5 l=0.3
+X130 a_18530_30260# a_16710_30640# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.21 pd=1.3 as=0.42 ps=2.6 w=0.7 l=0.2
+X131 a_9570_26000# rst_n VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.2 as=0.45 ps=2.1 w=1.5 l=0.3
+X132 a_21670_27340# VDPWR VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.3
+X133 uo_out[6] a_9570_26000# a_9750_27340# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.3
+X134 uo_out[5] VDPWR VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.9 ps=4.2 w=1.5 l=0.3
+X135 a_9970_30260# uo_out[7] VGND VGND sky130_fd_pr__nfet_01v8 ad=0.21 pd=1.3 as=0.42 ps=2.6 w=0.7 l=0.2
+X136 a_15150_26360# a_15150_25120# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.2 as=0.45 ps=2.1 w=1.5 l=0.3
+X137 a_17890_17370# a_17890_17370# VGND VGND sky130_fd_pr__nfet_01v8 ad=3 pd=11.2 as=3 ps=11.2 w=5 l=0.15
+X138 VDPWR a_13110_25260# a_13850_26000# VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.45 ps=2.1 w=1.5 l=0.3
+X139 a_15430_26660# newdene_0.AND_0.out a_15250_26660# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.3 ps=1.6 w=1 l=0.3
+X140 VDPWR uo_out[5] a_11810_28660# VDPWR sky130_fd_pr__pfet_01v8 ad=1.5 pd=6.2 as=1.5 ps=6.2 w=2.5 l=0.2
+X141 a_17390_25260# a_17290_25120# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.9 ps=4.2 w=1.5 l=0.3
+X142 a_14030_27340# a_13010_25120# a_13850_27340# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.3 ps=1.6 w=1 l=0.3
+X143 VDPWR a_17390_25260# a_18130_26000# VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.45 ps=2.1 w=1.5 l=0.3
+X144 a_18310_27340# a_17290_25120# a_18130_27340# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.3 ps=1.6 w=1 l=0.3
+X145 a_10810_28700# a_10290_30640# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=1.5 pd=6.2 as=1.5 ps=6.2 w=2.5 l=0.2
+X146 a_13110_25260# a_13190_27660# a_13290_24700# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.3
+X147 VDPWR uo_out[2] a_18230_28660# VDPWR sky130_fd_pr__pfet_01v8 ad=1.5 pd=6.2 as=1.5 ps=6.2 w=2.5 l=0.2
+X148 a_22390_28700# a_20990_30640# a_22050_28700# VDPWR sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.1 as=1.5 ps=6.2 w=2.5 l=0.2
+X149 a_11190_28700# a_10810_28700# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.1 as=1.5 ps=6.2 w=2.5 l=0.2
+X150 a_15090_28700# a_14570_30640# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=1.5 pd=6.2 as=1.5 ps=6.2 w=2.5 l=0.2
+X151 a_10970_26660# a_10870_26360# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.3
+X152 a_15990_24700# a_15250_25260# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.3
+X153 VDPWR a_16090_28660# a_15970_28700# VDPWR sky130_fd_pr__pfet_01v8 ad=1.5 pd=6.2 as=0.75 ps=3.1 w=2.5 l=0.2
+X154 a_19530_25260# a_19610_27660# a_19710_24700# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.3
+X155 a_11690_29600# a_10810_28700# a_11350_28700# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.2
+X156 VGND uo_out[0] a_22510_28660# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.6 ps=3.2 w=1 l=0.2
+X157 a_7010_26360# a_7010_25120# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.2 as=0.45 ps=2.1 w=1.5 l=0.3
+X158 a_17610_28700# a_17230_28700# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.1 as=1.5 ps=6.2 w=2.5 l=0.2
+X159 a_8030_24700# a_7490_28700# a_7850_24700# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.3 ps=1.6 w=1 l=0.3
+X160 a_21850_24700# newdene_0.AND_0.out a_21670_24700# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.3 ps=1.6 w=1 l=0.3
+X161 a_7290_26660# newdene_0.AND_0.out a_7110_26660# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.3 ps=1.6 w=1 l=0.3
+X162 VDPWR ui_in[1] a_15240_13040# VDPWR sky130_fd_pr__pfet_01v8 ad=1.2 pd=5.2 as=1.2 ps=5.2 w=2 l=0.2
+X163 VGND a_20370_28660# a_20250_29600# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.2
+X164 uo_out[0] a_22410_26000# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.2 as=0.45 ps=2.1 w=1.5 l=0.3
+X165 a_21890_29600# uo_out[0] VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.2
+X166 a_22590_26660# a_21670_25260# a_22410_26660# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.3 ps=1.6 w=1 l=0.3
+X167 VDPWR uo_out[3] a_16390_30640# VDPWR sky130_fd_pr__pfet_01v8 ad=0.36 pd=1.8 as=0.36 ps=1.8 w=1.2 l=0.2
+X168 VGND rst_n a_14750_10750# VGND sky130_fd_pr__nfet_01v8 ad=1.5 pd=6.2 as=1.5 ps=6.2 w=2.5 l=0.2
+X169 a_15630_28700# a_14570_30640# a_15470_29600# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.2
+X170 a_20990_30640# a_20670_30640# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.72 pd=3.6 as=0.36 ps=1.8 w=1.2 l=0.2
+X171 a_14110_12480# a_13750_11390# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=1.5 pd=5.6 as=3 ps=11.2 w=5 l=0.2
+X172 a_20990_30640# a_20670_30640# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.42 pd=2.6 as=0.42 ps=2.6 w=0.7 l=0.2
+X173 VDPWR newdene_0.AND_0.out a_15250_25260# VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.45 ps=2.1 w=1.5 l=0.3
+X174 VDPWR newdene_0.AND_0.b a_17590_11800# VDPWR sky130_fd_pr__pfet_01v8 ad=0.3 pd=1.6 as=0.3 ps=1.6 w=1 l=0.2
+X175 a_15990_26000# rst_n VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.2 as=0.45 ps=2.1 w=1.5 l=0.3
+X176 a_21670_24700# a_21570_25120# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.3
+X177 uo_out[3] a_15990_26000# a_16170_27340# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.3
+X178 VGND uio_in[4] a_9350_14670# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.6 ps=3.2 w=1 l=13.5
+X179 a_8910_27660# rst_n a_9750_24700# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.3
+X180 a_16390_30260# a_14570_30640# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.21 pd=1.3 as=0.42 ps=2.6 w=0.7 l=0.2
+X181 a_14110_12480# ui_in[1] a_14110_11390# VGND sky130_fd_pr__nfet_01v8 ad=2.34 pd=9 as=1.17 ps=4.5 w=3.9 l=0.2
+X182 a_20670_30640# uo_out[1] a_20670_30260# VGND sky130_fd_pr__nfet_01v8 ad=0.42 pd=2.6 as=0.21 ps=1.3 w=0.7 l=0.2
+X183 a_8730_25120# rst_n a_9010_26660# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.3
+X184 a_9840_11990# a_7750_10880# a_9710_11230# VGND sky130_fd_pr__nfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=0.15
+X185 a_8730_25120# a_8730_26360# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.9 ps=4.2 w=1.5 l=0.3
+X186 a_13010_26360# a_13010_25120# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.2 as=0.45 ps=2.1 w=1.5 l=0.3
+X187 VDPWR ui_in[4] a_9360_7920# VDPWR sky130_fd_pr__pfet_01v8 ad=1.8 pd=7.2 as=1.8 ps=7.2 w=3 l=4
+X188 a_10970_25260# a_10870_25120# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.9 ps=4.2 w=1.5 l=0.3
+X189 a_8830_27340# VDPWR VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.3
+X190 a_14030_24700# a_13490_28700# a_13850_24700# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.3 ps=1.6 w=1 l=0.3
+X191 VDPWR a_10970_25260# a_11710_26000# VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.45 ps=2.1 w=1.5 l=0.3
+X192 ua[1] a_14110_8860# a_15060_8890# VDPWR sky130_fd_pr__pfet_01v8 ad=1.8 pd=6.6 as=1.8 ps=6.6 w=6 l=0.15
+X193 a_13290_26660# newdene_0.AND_0.out a_13110_26660# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.3 ps=1.6 w=1 l=0.3
+X194 VDPWR uo_out[6] a_9670_28660# VDPWR sky130_fd_pr__pfet_01v8 ad=1.5 pd=6.2 as=1.5 ps=6.2 w=2.5 l=0.2
+X195 a_11890_27340# a_10870_25120# a_11710_27340# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.3 ps=1.6 w=1 l=0.3
+X196 uo_out[3] VDPWR VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.9 ps=4.2 w=1.5 l=0.3
+X197 a_7490_28700# VDPWR a_7330_29600# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.2
+X198 a_18310_24700# a_17770_28700# a_18130_24700# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.3 ps=1.6 w=1 l=0.3
+X199 a_19430_26360# a_19430_25120# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.2 as=0.45 ps=2.1 w=1.5 l=0.3
+X200 a_10310_11230# a_9680_11100# VGND VGND sky130_fd_pr__nfet_01v8 ad=1.5 pd=7 as=1.5 ps=7 w=3 l=0.15
+X201 VDPWR a_15250_25260# a_15990_26000# VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.45 ps=2.1 w=1.5 l=0.3
+X202 a_15060_8890# a_14110_8860# ua[1] VDPWR sky130_fd_pr__pfet_01v8 ad=1.8 pd=6.6 as=1.8 ps=6.6 w=6 l=0.15
+X203 a_16170_27340# a_15150_25120# a_15990_27340# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.3 ps=1.6 w=1 l=0.3
+X204 VDPWR a_7010_25120# uo_out[7] VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.45 ps=2.1 w=1.5 l=0.3
+X205 VDPWR newdene_0.AND_0.out a_7110_25260# VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.45 ps=2.1 w=1.5 l=0.3
+X206 a_19710_26660# newdene_0.AND_0.out a_19530_26660# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.3 ps=1.6 w=1 l=0.3
+X207 VDPWR uo_out[3] a_16090_28660# VDPWR sky130_fd_pr__pfet_01v8 ad=1.5 pd=6.2 as=1.5 ps=6.2 w=2.5 l=0.2
+X208 VDPWR a_15220_15010# a_15100_15050# VDPWR sky130_fd_pr__pfet_01v8 ad=0.6 pd=3.2 as=0.6 ps=3.2 w=1 l=1
+X209 a_7850_26000# rst_n VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.2 as=0.45 ps=2.1 w=1.5 l=0.3
+X210 VGND uio_in[3] a_9350_14670# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.6 ps=3.2 w=1 l=10
+X211 VDPWR a_21750_27660# a_21570_26360# VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.45 ps=2.1 w=1.5 l=0.3
+X212 a_20250_28700# a_18850_30640# a_19910_28700# VDPWR sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.1 as=1.5 ps=6.2 w=2.5 l=0.2
+X213 a_7850_26660# uo_out[7] VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.3
+X214 uo_out[7] a_7850_26000# a_8030_27340# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.3
+X215 a_20270_26000# rst_n a_20450_26660# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.3
+X216 VDPWR a_22050_28700# a_21750_27660# VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.45 ps=2.1 w=1.5 l=0.3
+X217 VGND uo_out[1] a_20370_28660# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.6 ps=3.2 w=1 l=0.2
+X218 a_13750_11390# a_12280_12070# VGND VGND sky130_fd_pr__nfet_01v8 ad=2.34 pd=9 as=2.34 ps=9 w=3.9 l=0.2
+X219 a_15470_28700# a_15090_28700# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.1 as=1.5 ps=6.2 w=2.5 l=0.2
+X220 a_19370_28700# a_18850_30640# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=1.5 pd=6.2 as=1.5 ps=6.2 w=2.5 l=0.2
+X221 a_12110_30640# a_10290_30640# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.36 pd=1.8 as=0.72 ps=3.6 w=1.2 l=0.2
+X222 VDPWR newdene_0.AND_0.b a_7660_15880# VDPWR sky130_fd_pr__pfet_01v8 ad=3 pd=11.2 as=3 ps=11.2 w=5 l=0.2
+X223 a_15970_29600# a_15090_28700# a_15630_28700# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.2
+X224 a_21570_26360# VDPWR VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.9 ps=4.2 w=1.5 l=0.3
+X225 a_18530_30640# a_16710_30640# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.36 pd=1.8 as=0.72 ps=3.6 w=1.2 l=0.2
+X226 a_8830_25260# a_8910_27660# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.2 as=0.45 ps=2.1 w=1.5 l=0.3
+X227 uo_out[6] a_9570_26000# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.2 as=0.45 ps=2.1 w=1.5 l=0.3
+X228 a_10440_11990# a_10140_11990# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=2.5 pd=11 as=2.5 ps=11 w=5 l=0.15
+X229 a_13490_28700# a_12430_30640# a_13330_29600# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.2
+X230 a_12280_12070# a_11040_11990# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=5.155 pd=19.2 as=4.9 ps=20.6 w=9.8 l=0.4
+X231 a_9970_30640# uo_out[7] VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.36 pd=1.8 as=0.72 ps=3.6 w=1.2 l=0.2
+X232 a_9750_26660# a_8830_25260# a_9570_26660# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.3 ps=1.6 w=1 l=0.3
+X233 a_10870_25120# rst_n a_11150_26660# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.3
+X234 VDPWR newdene_0.AND_0.out a_13110_25260# VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.45 ps=2.1 w=1.5 l=0.3
+X235 a_6950_28700# VDPWR VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=1.5 pd=6.2 as=1.5 ps=6.2 w=2.5 l=0.2
+X236 a_15330_27660# rst_n a_16170_24700# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.3
+X237 VDPWR a_13010_25120# uo_out[4] VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.45 ps=2.1 w=1.5 l=0.3
+X238 a_19910_28700# a_18850_30640# a_19750_29600# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.2
+X239 a_13850_26000# rst_n VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.2 as=0.45 ps=2.1 w=1.5 l=0.3
+X240 VDPWR a_7950_28660# a_7830_28700# VDPWR sky130_fd_pr__pfet_01v8 ad=1.5 pd=6.2 as=0.75 ps=3.1 w=2.5 l=0.2
+X241 uo_out[4] a_13850_26000# a_14030_27340# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.3
+X242 a_15150_25120# a_15150_26360# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.9 ps=4.2 w=1.5 l=0.3
+X243 a_13850_26660# uo_out[4] VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.3
+X244 VDPWR a_17290_25120# uo_out[2] VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.45 ps=2.1 w=1.5 l=0.3
+X245 a_14250_30260# a_12430_30640# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.21 pd=1.3 as=0.42 ps=2.6 w=0.7 l=0.2
+X246 a_17290_25120# rst_n a_17570_26660# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.3
+X247 VDPWR newdene_0.AND_0.out a_19530_25260# VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.45 ps=2.1 w=1.5 l=0.3
+X248 a_15250_27340# VDPWR VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.3
+X249 a_8830_24700# a_8730_25120# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.3
+X250 a_18130_26660# uo_out[2] VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.3
+X251 a_19610_27660# rst_n VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.2 as=0.45 ps=2.1 w=1.5 l=0.3
+X252 a_7190_27660# a_7110_25260# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.9 ps=4.2 w=1.5 l=0.3
+X253 a_11890_24700# a_11350_28700# a_11710_24700# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.3 ps=1.6 w=1 l=0.3
+X254 VDPWR a_17590_14450# a_17470_14530# VDPWR sky130_fd_pr__pfet_01v8 ad=4.8 pd=17.2 as=2.4 ps=8.6 w=8 l=0.15
+X255 a_9570_26660# uo_out[6] VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.3
+X256 a_16170_24700# a_15630_28700# a_15990_24700# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.3 ps=1.6 w=1 l=0.3
+X257 newdene_0.AND_0.out a_17590_11800# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=2.2 as=0.3 ps=2.2 w=0.5 l=0.2
+X258 a_17570_26660# newdene_0.AND_0.out a_17390_26660# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.3 ps=1.6 w=1 l=0.3
+X259 a_7190_27660# rst_n a_8030_24700# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.3
+X260 a_7010_25120# a_7010_26360# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.9 ps=4.2 w=1.5 l=0.3
+X261 VDPWR ui_in[6] a_9360_7920# VDPWR sky130_fd_pr__pfet_01v8 ad=3.6 pd=13.2 as=3.6 ps=13.2 w=6 l=4
+X262 a_12950_28700# a_12430_30640# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=1.5 pd=6.2 as=1.5 ps=6.2 w=2.5 l=0.2
+X263 a_21570_25120# rst_n VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.2 as=0.45 ps=2.1 w=1.5 l=0.3
+X264 a_7110_27340# VDPWR VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.3
+X265 VDPWR a_13950_28660# a_13830_28700# VDPWR sky130_fd_pr__pfet_01v8 ad=1.5 pd=6.2 as=0.75 ps=3.1 w=2.5 l=0.2
+X266 a_21570_26360# a_21570_25120# a_21850_27340# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.3
+X267 a_10970_25260# a_11050_27660# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.2 as=0.45 ps=2.1 w=1.5 l=0.3
+X268 VDPWR a_9210_28700# a_8910_27660# VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.45 ps=2.1 w=1.5 l=0.3
+X269 a_22410_26000# uo_out[0] VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.9 ps=4.2 w=1.5 l=0.3
+X270 a_22410_27340# VDPWR VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.3
+X271 VDPWR a_18230_28660# a_18110_28700# VDPWR sky130_fd_pr__pfet_01v8 ad=1.5 pd=6.2 as=0.75 ps=3.1 w=2.5 l=0.2
+X272 uo_out[3] a_15990_26000# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.2 as=0.45 ps=2.1 w=1.5 l=0.3
+X273 a_22050_28700# uo_out[0] a_21890_28700# VDPWR sky130_fd_pr__pfet_01v8 ad=1.5 pd=6.2 as=0.75 ps=3.1 w=2.5 l=0.2
+X274 a_19750_28700# a_19370_28700# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.1 as=1.5 ps=6.2 w=2.5 l=0.2
+X275 a_17390_25260# a_17470_27660# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.2 as=0.45 ps=2.1 w=1.5 l=0.3
+X276 a_13190_27660# a_13110_25260# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.9 ps=4.2 w=1.5 l=0.3
+X277 a_16390_30640# a_14570_30640# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.36 pd=1.8 as=0.72 ps=3.6 w=1.2 l=0.2
+X278 VDPWR uo_out[1] a_20670_30640# VDPWR sky130_fd_pr__pfet_01v8 ad=0.36 pd=1.8 as=0.36 ps=1.8 w=1.2 l=0.2
+X279 a_11350_28700# a_10290_30640# a_11190_29600# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.2
+X280 VGND a_22510_28660# a_22390_29600# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.2
+X281 a_10360_14660# a_7660_15880# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=3 pd=11.2 as=3 ps=11.2 w=5 l=0.2
+X282 VDPWR ui_in[2] a_14110_13980# VDPWR sky130_fd_pr__pfet_01v8 ad=3 pd=11.2 as=1.5 ps=5.6 w=5 l=0.2
+X283 a_17470_27660# a_17390_25260# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.9 ps=4.2 w=1.5 l=0.3
+X284 a_8730_26360# VDPWR VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.9 ps=4.2 w=1.5 l=0.3
+X285 a_17590_11800# clk VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.2
+X286 a_8910_27660# a_8830_25260# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.9 ps=4.2 w=1.5 l=0.3
+X287 VDPWR a_10870_25120# uo_out[5] VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.45 ps=2.1 w=1.5 l=0.3
+X288 a_13190_27660# rst_n a_14030_24700# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.3
+X289 a_17770_28700# a_16710_30640# a_17610_29600# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.2
+X290 a_11710_26000# rst_n VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.2 as=0.45 ps=2.1 w=1.5 l=0.3
+X291 a_15250_24700# a_15150_25120# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.3
+X292 VGND uo_out[7] a_7950_28660# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.6 ps=3.2 w=1 l=0.2
+X293 a_14110_11390# a_13750_11390# VGND VGND sky130_fd_pr__nfet_01v8 ad=1.17 pd=4.5 as=2.34 ps=9 w=3.9 l=0.2
+X294 a_13010_25120# a_13010_26360# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.9 ps=4.2 w=1.5 l=0.3
+X295 a_11710_26660# uo_out[5] VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.3
+X296 uo_out[5] a_11710_26000# a_11890_27340# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.3
+X297 VDPWR a_15150_25120# uo_out[3] VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.45 ps=2.1 w=1.5 l=0.3
+X298 a_15150_25120# rst_n a_15430_26660# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.3
+X299 VDPWR newdene_0.AND_0.out a_17390_25260# VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.45 ps=2.1 w=1.5 l=0.3
+X300 a_13110_27340# VDPWR VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.3
+X301 a_17590_14450# a_17590_14450# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.6 pd=3.2 as=0.6 ps=3.2 w=1 l=0.15
+X302 VDPWR a_17810_14890# a_18910_14490# VDPWR sky130_fd_pr__pfet_01v8 ad=2.6 pd=9.3 as=2.6 ps=9.3 w=4 l=0.4
+X303 a_18130_26000# rst_n VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.2 as=0.45 ps=2.1 w=1.5 l=0.3
+X304 uo_out[7] a_7850_26000# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.2 as=0.45 ps=2.1 w=1.5 l=0.3
+X305 a_19430_25120# a_19430_26360# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.9 ps=4.2 w=1.5 l=0.3
+X306 uo_out[2] a_18130_26000# a_18310_27340# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.3
+X307 a_7330_29600# uo_out[7] VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.2
+X308 a_17930_14850# ua[1] a_17470_14530# VDPWR sky130_fd_pr__pfet_01v8 ad=6 pd=21.2 as=6 ps=21.2 w=10 l=0.15
+X309 a_19530_27340# VDPWR VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.3
+X310 a_15120_13110# a_15240_13040# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.615 pd=2.65 as=0.615 ps=2.65 w=2.05 l=0.15
+X311 VDPWR a_19530_25260# a_20270_26000# VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.45 ps=2.1 w=1.5 l=0.3
+X312 a_13750_13980# a_12280_12070# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=3 pd=11.2 as=3 ps=11.2 w=5 l=0.2
+X313 a_20450_27340# a_19430_25120# a_20270_27340# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.3 ps=1.6 w=1 l=0.3
+X314 a_7110_24700# a_7010_25120# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.3
+X315 newdene_0.AND_0.b a_17810_14890# a_18910_16550# VGND sky130_fd_pr__nfet_01v8 ad=1.3 pd=5.3 as=1.3 ps=5.3 w=2 l=0.4
+X316 a_7750_10880# a_7660_15880# clk VDPWR sky130_fd_pr__pfet_01v8 ad=7.2 pd=25.2 as=7.2 ps=25.2 w=12 l=0.2
+X317 a_21670_25260# a_21750_27660# a_21850_24700# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.3
+X318 a_7010_25120# rst_n a_7290_26660# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.3
+X319 a_14110_8860# ui_in[0] a_14110_10170# VGND sky130_fd_pr__nfet_01v8 ad=2.34 pd=9 as=1.17 ps=4.5 w=3.9 l=0.2
+X320 VGND a_18170_16750# a_18170_16750# VGND sky130_fd_pr__nfet_01v8 ad=1.2 pd=5.2 as=1.2 ps=5.2 w=2 l=0.2
+X321 VDPWR a_11810_28660# a_11690_28700# VDPWR sky130_fd_pr__pfet_01v8 ad=1.5 pd=6.2 as=0.75 ps=3.1 w=2.5 l=0.2
+X322 a_10740_11990# a_10440_11990# VGND VGND sky130_fd_pr__nfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=0.15
+X323 VDPWR a_15240_13040# a_15120_13110# VDPWR sky130_fd_pr__pfet_01v8 ad=1.23 pd=5.3 as=0.615 ps=2.65 w=2.05 l=0.15
+X324 VGND uo_out[4] a_13950_28660# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.6 ps=3.2 w=1 l=0.2
+X325 a_17030_14850# a_17030_14850# a_16910_14890# VDPWR sky130_fd_pr__pfet_01v8 ad=1.8 pd=7.2 as=1.8 ps=7.2 w=3 l=0.2
+X326 a_22410_24700# a_21670_25260# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.3
+X327 a_20270_26000# uo_out[1] VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.9 ps=4.2 w=1.5 l=0.3
+X328 a_22410_26000# rst_n a_22590_26660# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.3
+X329 a_20270_27340# VDPWR VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.3
+X330 VDPWR ui_in[0] a_14110_8860# VDPWR sky130_fd_pr__pfet_01v8 ad=3 pd=11.2 as=1.5 ps=5.6 w=5 l=0.2
+X331 VDPWR newdene_0.AND_0.out a_10870_25120# VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.45 ps=2.1 w=1.5 l=0.3
+X332 ua[1] a_14110_8860# a_15060_8890# VDPWR sky130_fd_pr__pfet_01v8 ad=1.8 pd=6.6 as=1.8 ps=6.6 w=6 l=0.15
+X333 uo_out[4] a_13850_26000# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.2 as=0.45 ps=2.1 w=1.5 l=0.3
+X334 a_11050_27660# a_10970_25260# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.9 ps=4.2 w=1.5 l=0.3
+X335 a_15250_25260# a_15330_27660# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.2 as=0.45 ps=2.1 w=1.5 l=0.3
+X336 a_11150_27340# a_11050_27660# a_10970_27340# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.3 ps=1.6 w=1 l=0.3
+X337 a_15150_26360# VDPWR VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.9 ps=4.2 w=1.5 l=0.3
+X338 a_14250_30640# a_12430_30640# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.36 pd=1.8 as=0.72 ps=3.6 w=1.2 l=0.2
+X339 a_13330_29600# uo_out[4] VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.2
+X340 a_17230_28700# a_16710_30640# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.6 ps=3.2 w=1 l=0.2
+X341 a_15060_8890# a_14110_8860# ua[1] VDPWR sky130_fd_pr__pfet_01v8 ad=3.6 pd=13.2 as=1.8 ps=6.6 w=6 l=0.15
+X342 a_9210_28700# uo_out[6] a_9050_28700# VDPWR sky130_fd_pr__pfet_01v8 ad=1.5 pd=6.2 as=0.75 ps=3.1 w=2.5 l=0.2
+X343 ua[1] a_14110_13980# a_15100_15050# VDPWR sky130_fd_pr__pfet_01v8 ad=0.3 pd=2.2 as=0.3 ps=2.2 w=0.5 l=0.2
+X344 a_12430_30640# a_12110_30640# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.72 pd=3.6 as=0.36 ps=1.8 w=1.2 l=0.2
+X345 a_8670_28700# uo_out[7] VGND VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.6 ps=3.2 w=1 l=0.2
+X346 VGND a_9670_28660# a_9550_29600# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.2
+X347 a_7830_28700# VDPWR a_7490_28700# VDPWR sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.1 as=1.5 ps=6.2 w=2.5 l=0.2
+X348 VDPWR newdene_0.AND_0.out a_8730_25120# VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.45 ps=2.1 w=1.5 l=0.3
+X349 a_14110_13980# ui_in[2] a_14110_15310# VGND sky130_fd_pr__nfet_01v8 ad=2.34 pd=9 as=1.17 ps=4.5 w=3.9 l=0.2
+X350 a_11050_27660# rst_n a_11890_24700# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.3
+X351 a_9050_29600# uo_out[6] VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.2
+X352 a_9010_27340# a_8910_27660# a_8830_27340# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.3 ps=1.6 w=1 l=0.3
+X353 a_13110_24700# a_13010_25120# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.3
+X354 a_13750_8860# a_12280_12070# VGND VGND sky130_fd_pr__nfet_01v8 ad=2.34 pd=9 as=2.34 ps=9 w=3.9 l=0.2
+X355 a_13010_25120# rst_n a_13290_26660# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.3
+X356 a_17470_27660# rst_n a_18310_24700# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.3
+X357 a_19530_24700# a_19430_25120# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.3
+X358 a_7110_25260# a_7190_27660# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.2 as=0.45 ps=2.1 w=1.5 l=0.3
+X359 a_17290_25120# a_17290_26360# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.9 ps=4.2 w=1.5 l=0.3
+X360 a_15990_26660# uo_out[3] VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.3
+X361 a_7010_26360# VDPWR VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.9 ps=4.2 w=1.5 l=0.3
+X362 a_19430_25120# rst_n a_19710_26660# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.3
+X363 a_17390_27340# VDPWR VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.3
+X364 a_9360_7920# ui_in[3] VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.6 pd=3.2 as=0.6 ps=3.2 w=1 l=4
+X365 a_20450_24700# a_19910_28700# a_20270_24700# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.3 ps=1.6 w=1 l=0.3
+X366 a_21570_26360# a_21570_25120# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.2 as=0.45 ps=2.1 w=1.5 l=0.3
+X367 a_8030_26660# a_7110_25260# a_7850_26660# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.3 ps=1.6 w=1 l=0.3
+X368 a_21750_27660# rst_n VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.2 as=0.45 ps=2.1 w=1.5 l=0.3
+X369 a_10140_11990# a_9840_11990# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=2.5 pd=11 as=2.5 ps=11 w=5 l=0.15
+X370 a_21850_26660# newdene_0.AND_0.out a_21670_26660# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.3 ps=1.6 w=1 l=0.3
+X371 uo_out[0] VDPWR VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.9 ps=4.2 w=1.5 l=0.3
+X372 a_17890_17370# a_17890_17370# a_19550_14370# VDPWR sky130_fd_pr__pfet_01v8 ad=2.4 pd=9.2 as=2.4 ps=9.2 w=4 l=0.15
+X373 a_17930_14850# a_18170_16750# VGND VGND sky130_fd_pr__nfet_01v8 ad=1.2 pd=5.2 as=1.2 ps=5.2 w=2 l=0.2
+X374 a_13750_13980# a_12280_12070# VGND VGND sky130_fd_pr__nfet_01v8 ad=2.34 pd=9 as=2.34 ps=9 w=3.9 l=0.2
+X375 a_13830_28700# a_12430_30640# a_13490_28700# VDPWR sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.1 as=1.5 ps=6.2 w=2.5 l=0.2
+X376 VGND uo_out[5] a_11810_28660# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.6 ps=3.2 w=1 l=0.2
+X377 a_21510_28700# a_20990_30640# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=1.5 pd=6.2 as=1.5 ps=6.2 w=2.5 l=0.2
+X378 a_20270_24700# a_19530_25260# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.3
+X379 VGND a_17810_14890# a_18910_16550# VGND sky130_fd_pr__nfet_01v8 ad=1.3 pd=5.3 as=1.3 ps=5.3 w=2 l=0.4
+X380 a_18110_28700# a_16710_30640# a_17770_28700# VDPWR sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.1 as=1.5 ps=6.2 w=2.5 l=0.2
+X381 VGND a_10310_11230# a_10310_11230# VGND sky130_fd_pr__nfet_01v8 ad=2.25 pd=10 as=2.25 ps=10 w=4.5 l=0.15
+X382 a_21670_26660# a_21570_26360# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.3
+X383 a_11150_24700# newdene_0.AND_0.out a_10970_24700# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.3 ps=1.6 w=1 l=0.3
+X384 a_10810_28700# a_10290_30640# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.6 ps=3.2 w=1 l=0.2
+X385 a_9550_28700# uo_out[7] a_9210_28700# VDPWR sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.1 as=1.5 ps=6.2 w=2.5 l=0.2
+X386 ua[1] a_14750_10750# VGND VGND sky130_fd_pr__nfet_01v8 ad=2.4 pd=9.2 as=2.4 ps=9.2 w=4 l=0.2
+X387 VGND uo_out[2] a_18230_28660# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.6 ps=3.2 w=1 l=0.2
+X388 a_9570_26000# rst_n a_9750_26660# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.3
+X389 uo_out[5] a_11710_26000# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.2 as=0.45 ps=2.1 w=1.5 l=0.3
+X390 a_13110_25260# a_13190_27660# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.2 as=0.45 ps=2.1 w=1.5 l=0.3
+X391 a_22390_29600# a_21510_28700# a_22050_28700# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.2
+X392 a_14110_13980# a_13750_13980# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=1.5 pd=5.6 as=3 ps=11.2 w=5 l=0.2
+X393 a_9350_14670# ui_in[0] a_15340_7950# VGND sky130_fd_pr__nfet_01v8 ad=3.6 pd=13.2 as=3.6 ps=13.2 w=6 l=0.15
+X394 a_13010_26360# VDPWR VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.9 ps=4.2 w=1.5 l=0.3
+X395 a_11190_29600# uo_out[5] VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.2
+X396 a_15090_28700# a_14570_30640# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.6 ps=3.2 w=1 l=0.2
+X397 VGND a_16090_28660# a_15970_29600# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.2
+X398 VDPWR newdene_0.AND_0.out a_15150_25120# VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.45 ps=2.1 w=1.5 l=0.3
+X399 a_10290_30640# a_9970_30640# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.72 pd=3.6 as=0.36 ps=1.8 w=1.2 l=0.2
+X400 a_14030_26660# a_13110_25260# a_13850_26660# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.3 ps=1.6 w=1 l=0.3
+X401 uo_out[2] a_18130_26000# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.2 as=0.45 ps=2.1 w=1.5 l=0.3
+X402 a_15330_27660# a_15250_25260# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.9 ps=4.2 w=1.5 l=0.3
+X403 a_19530_25260# a_19610_27660# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.2 as=0.45 ps=2.1 w=1.5 l=0.3
+X404 a_15430_27340# a_15330_27660# a_15250_27340# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.3 ps=1.6 w=1 l=0.3
+X405 a_9010_24700# newdene_0.AND_0.out a_8830_24700# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.3 ps=1.6 w=1 l=0.3
+X406 a_19430_26360# VDPWR VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.9 ps=4.2 w=1.5 l=0.3
+X407 a_17610_29600# uo_out[2] VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.2
+X408 a_18310_26660# a_17390_25260# a_18130_26660# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.3 ps=1.6 w=1 l=0.3
+X409 a_12430_30640# a_12110_30640# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.42 pd=2.6 as=0.42 ps=2.6 w=0.7 l=0.2
+X410 a_9350_14670# a_9350_14670# a_10360_14660# VDPWR sky130_fd_pr__pfet_01v8 ad=3 pd=11.2 as=3 ps=11.2 w=5 l=3
+X411 a_11040_11990# a_10740_11990# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=2.5 pd=11 as=2.5 ps=11 w=5 l=0.15
+X412 VDPWR a_7490_28700# a_7190_27660# VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.45 ps=2.1 w=1.5 l=0.3
+X413 a_16710_30640# a_16390_30640# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.72 pd=3.6 as=0.36 ps=1.8 w=1.2 l=0.2
+X414 VDPWR a_19430_25120# uo_out[1] VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.45 ps=2.1 w=1.5 l=0.3
+X415 VDPWR newdene_0.AND_0.out a_21670_25260# VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.45 ps=2.1 w=1.5 l=0.3
+X416 a_17470_14530# a_16910_14890# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=2.4 pd=8.6 as=4.8 ps=17.2 w=8 l=0.15
+X417 VGND uio_in[1] a_9350_14670# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.6 ps=3.2 w=1 l=3.5
+X418 a_10870_25120# a_10870_26360# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.9 ps=4.2 w=1.5 l=0.3
+X419 a_9970_30640# uo_out[6] a_9970_30260# VGND sky130_fd_pr__nfet_01v8 ad=0.42 pd=2.6 as=0.21 ps=1.3 w=0.7 l=0.2
+X420 a_18850_30640# a_18530_30640# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.42 pd=2.6 as=0.42 ps=2.6 w=0.7 l=0.2
+X421 ua[1] a_14110_12480# a_15120_13110# VDPWR sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.1 as=0.75 ps=3.1 w=2.5 l=0.15
+X422 a_10970_27340# VDPWR VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.3
+X423 newdene_0.AND_0.out a_17590_11800# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.2
+X424 a_17390_24700# a_17290_25120# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.3
+X425 a_9350_14670# ui_in[2] a_15220_15010# VGND sky130_fd_pr__nfet_01v8 ad=2.4 pd=9.2 as=2.4 ps=9.2 w=4 l=0.2
+X426 VDPWR ui_in[0] a_15340_7950# VDPWR sky130_fd_pr__pfet_01v8 ad=1.2 pd=5.2 as=1.2 ps=5.2 w=2 l=0.15
+X427 VGND uio_in[0] a_9350_14670# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.6 ps=3.2 w=1 l=2
+X428 a_17590_14450# a_17930_14850# a_17810_14890# VDPWR sky130_fd_pr__pfet_01v8 ad=2.4 pd=9.2 as=2.4 ps=9.2 w=4 l=0.15
+X429 VDPWR a_15340_7950# a_15060_8890# VDPWR sky130_fd_pr__pfet_01v8 ad=0.9 pd=3.6 as=1.8 ps=7.2 w=3 l=0.15
+X430 VDPWR newdene_0.AND_0.out a_7010_25120# VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.45 ps=2.1 w=1.5 l=0.3
+X431 a_7290_27340# a_7190_27660# a_7110_27340# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.3 ps=1.6 w=1 l=0.3
+X432 uo_out[1] VDPWR VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.9 ps=4.2 w=1.5 l=0.3
+X433 a_21670_25260# a_21570_25120# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.9 ps=4.2 w=1.5 l=0.3
+X434 VDPWR a_21670_25260# a_22410_26000# VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.45 ps=2.1 w=1.5 l=0.3
+X435 a_15120_13110# a_14110_12480# ua[1] VDPWR sky130_fd_pr__pfet_01v8 ad=1.5 pd=6.2 as=0.75 ps=3.1 w=2.5 l=0.15
+X436 a_8910_27660# rst_n VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.2 as=0.45 ps=2.1 w=1.5 l=0.3
+X437 VDPWR a_11050_27660# a_10870_26360# VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.45 ps=2.1 w=1.5 l=0.3
+X438 a_22590_27340# a_21570_25120# a_22410_27340# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.3 ps=1.6 w=1 l=0.3
+X439 VGND a_16910_15670# a_16910_15670# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.6 ps=3.2 w=1 l=0.2
+X440 a_14110_10170# a_13750_8860# VGND VGND sky130_fd_pr__nfet_01v8 ad=1.17 pd=4.5 as=2.34 ps=9 w=3.9 l=0.2
+X441 VDPWR uo_out[0] a_22510_28660# VDPWR sky130_fd_pr__pfet_01v8 ad=1.5 pd=6.2 as=1.5 ps=6.2 w=2.5 l=0.2
+X442 a_17470_14530# ua[0] a_18170_16750# VDPWR sky130_fd_pr__pfet_01v8 ad=6 pd=21.2 as=6 ps=21.2 w=10 l=0.15
+X443 a_10910_11230# a_9680_11100# VGND VGND sky130_fd_pr__nfet_01v8 ad=1.5 pd=7 as=1.5 ps=7 w=3 l=0.15
+X444 a_11690_28700# a_10290_30640# a_11350_28700# VDPWR sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.1 as=1.5 ps=6.2 w=2.5 l=0.2
+X445 VDPWR a_13490_28700# a_13190_27660# VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.45 ps=2.1 w=1.5 l=0.3
+X446 a_9360_7920# ui_in[5] VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=2.58 pd=9.8 as=2.58 ps=9.8 w=4.3 l=4
+X447 VGND uo_out[6] a_9670_28660# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.6 ps=3.2 w=1 l=0.2
+X448 a_9710_11230# a_9680_11100# VGND VGND sky130_fd_pr__nfet_01v8 ad=1.5 pd=7 as=1.5 ps=7 w=3 l=0.15
+X449 VDPWR a_20370_28660# a_20250_28700# VDPWR sky130_fd_pr__pfet_01v8 ad=1.5 pd=6.2 as=0.75 ps=3.1 w=2.5 l=0.2
+X450 a_15990_26000# rst_n a_16170_26660# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.3
+X451 VDPWR a_17770_28700# a_17470_27660# VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.45 ps=2.1 w=1.5 l=0.3
+X452 VDPWR a_8910_27660# a_8730_26360# VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.45 ps=2.1 w=1.5 l=0.3
+X453 a_17590_11800# newdene_0.AND_0.b a_17590_11340# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=2.2 as=0.15 ps=1.1 w=0.5 l=0.2
+X454 a_21890_28700# a_21510_28700# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.1 as=1.5 ps=6.2 w=2.5 l=0.2
+X455 a_8730_25120# rst_n VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.2 as=0.45 ps=2.1 w=1.5 l=0.3
+X456 VGND uo_out[3] a_16090_28660# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.6 ps=3.2 w=1 l=0.2
+X457 a_8730_26360# a_8730_25120# a_9010_27340# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.3
+X458 a_8830_26660# a_8730_26360# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.3
+X459 a_20250_29600# a_19370_28700# a_19910_28700# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.2
+X460 a_15630_28700# uo_out[3] a_15470_28700# VDPWR sky130_fd_pr__pfet_01v8 ad=1.5 pd=6.2 as=0.75 ps=3.1 w=2.5 l=0.2
+X461 a_15430_24700# newdene_0.AND_0.out a_15250_24700# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.3 ps=1.6 w=1 l=0.3
+X462 VDPWR newdene_0.AND_0.out a_13010_25120# VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.45 ps=2.1 w=1.5 l=0.3
+X463 a_11890_26660# a_10970_25260# a_11710_26660# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.3 ps=1.6 w=1 l=0.3
+X464 a_13290_27340# a_13190_27660# a_13110_27340# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.3 ps=1.6 w=1 l=0.3
+X465 a_14110_15310# a_13750_13980# VGND VGND sky130_fd_pr__nfet_01v8 ad=1.17 pd=4.5 as=2.34 ps=9 w=3.9 l=0.2
+X466 a_17290_26360# VDPWR VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.9 ps=4.2 w=1.5 l=0.3
+X467 a_15470_29600# uo_out[3] VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.2
+X468 VGND newdene_0.AND_0.b a_7660_15880# VGND sky130_fd_pr__nfet_01v8 ad=1.5 pd=6.2 as=1.5 ps=6.2 w=2.5 l=0.2
+X469 a_19370_28700# a_18850_30640# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.6 ps=3.2 w=1 l=0.2
+X470 a_16170_26660# a_15250_25260# a_15990_26660# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.3 ps=1.6 w=1 l=0.3
+X471 a_10290_30640# a_9970_30640# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.42 pd=2.6 as=0.42 ps=2.6 w=0.7 l=0.2
+X472 VDPWR newdene_0.AND_0.out a_19430_25120# VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.45 ps=2.1 w=1.5 l=0.3
+X473 a_14570_30640# a_14250_30640# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.72 pd=3.6 as=0.36 ps=1.8 w=1.2 l=0.2
+X474 a_19710_27340# a_19610_27660# a_19530_27340# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.3 ps=1.6 w=1 l=0.3
+X475 a_10970_24700# a_10870_25120# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.3
+X476 a_7850_26000# rst_n a_8030_26660# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.3
+X477 VDPWR a_15240_13040# a_15120_13110# VDPWR sky130_fd_pr__pfet_01v8 ad=0.615 pd=2.65 as=1.23 ps=5.3 w=2.05 l=0.15
+X478 a_10440_11990# a_10140_11990# a_10310_11230# VGND sky130_fd_pr__nfet_01v8 ad=1 pd=5 as=1 ps=5 w=2 l=0.15
+X479 a_20270_26000# rst_n VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.2 as=0.45 ps=2.1 w=1.5 l=0.3
+X480 a_7850_26000# uo_out[7] VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.9 ps=4.2 w=1.5 l=0.3
+X481 a_16710_30640# a_16390_30640# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.42 pd=2.6 as=0.42 ps=2.6 w=0.7 l=0.2
+X482 a_9840_11990# a_7750_10880# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=2.5 pd=11 as=2.5 ps=11 w=5 l=0.15
+X483 uo_out[1] a_20270_26000# a_20450_27340# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.3
+X484 a_7850_27340# VDPWR VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.3
+X485 a_20670_30260# a_18850_30640# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.21 pd=1.3 as=0.42 ps=2.6 w=0.7 l=0.2
+X486 a_7490_28700# uo_out[7] a_7330_28700# VDPWR sky130_fd_pr__pfet_01v8 ad=1.5 pd=6.2 as=0.75 ps=3.1 w=2.5 l=0.2
+X487 a_14250_30640# uo_out[4] a_14250_30260# VGND sky130_fd_pr__nfet_01v8 ad=0.42 pd=2.6 as=0.21 ps=1.3 w=0.7 l=0.2
+X488 a_7290_24700# newdene_0.AND_0.out a_7110_24700# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.3 ps=1.6 w=1 l=0.3
+X489 a_6950_28700# VDPWR VGND VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.6 ps=3.2 w=1 l=0.2
+X490 a_12280_12070# a_7750_10880# a_12280_10390# VGND sky130_fd_pr__nfet_01v8 ad=3.5 pd=15 as=3.5 ps=15 w=7 l=0.4
+X491 VGND a_7950_28660# a_7830_29600# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.2
+X492 a_15330_27660# rst_n VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.2 as=0.45 ps=2.1 w=1.5 l=0.3
+X493 a_14110_8860# a_13750_8860# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=1.5 pd=5.6 as=3 ps=11.2 w=5 l=0.2
+X494 a_22590_24700# a_22050_28700# a_22410_24700# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.3 ps=1.6 w=1 l=0.3
+X495 VDPWR a_16910_14890# a_16910_14890# VDPWR sky130_fd_pr__pfet_01v8 ad=0.6 pd=3.2 as=0.6 ps=3.2 w=1 l=0.2
+X496 a_8830_25260# a_8730_25120# VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.9 ps=4.2 w=1.5 l=0.3
+X497 VDPWR uo_out[1] a_20370_28660# VDPWR sky130_fd_pr__pfet_01v8 ad=1.5 pd=6.2 as=1.5 ps=6.2 w=2.5 l=0.2
+X498 VDPWR a_8830_25260# a_9570_26000# VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.45 ps=2.1 w=1.5 l=0.3
+X499 a_10870_25120# rst_n VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.2 as=0.45 ps=2.1 w=1.5 l=0.3
+X500 VDPWR a_11350_28700# a_11050_27660# VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.45 ps=2.1 w=1.5 l=0.3
+X501 a_10870_26360# a_10870_25120# a_11150_27340# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.3
+X502 a_9750_27340# a_8730_25120# a_9570_27340# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.3 ps=1.6 w=1 l=0.3
+X503 VDPWR a_15330_27660# a_15150_26360# VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.45 ps=2.1 w=1.5 l=0.3
+X504 a_13850_26000# rst_n a_14030_26660# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.3
+X505 a_15970_28700# a_14570_30640# a_15630_28700# VDPWR sky130_fd_pr__pfet_01v8 ad=0.75 pd=3.1 as=1.5 ps=6.2 w=2.5 l=0.2
+X506 VDPWR a_15630_28700# a_15330_27660# VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.45 ps=2.1 w=1.5 l=0.3
+X507 a_13850_26000# uo_out[4] VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.9 ps=4.2 w=1.5 l=0.3
+X508 a_9360_7920# a_9680_11100# newdene_0.AND_0.b VGND sky130_fd_pr__nfet_01v8 ad=1.8 pd=7.2 as=1.8 ps=7.2 w=3 l=0.2
+X509 a_17290_25120# rst_n VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.2 as=0.45 ps=2.1 w=1.5 l=0.3
+X510 a_15250_26660# a_15150_26360# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.3
+X511 a_8830_25260# a_8910_27660# a_9010_24700# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.3
+X512 a_17290_26360# a_17290_25120# a_17570_27340# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.3
+X513 a_13850_27340# VDPWR VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.3
+X514 a_18130_26000# uo_out[2] VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.9 ps=4.2 w=1.5 l=0.3
+X515 newdene_0.AND_0.b newdene_0.AND_0.b VGND VGND sky130_fd_pr__nfet_01v8 ad=1.8 pd=7.2 as=1.8 ps=7.2 w=3 l=5
+X516 a_7190_27660# rst_n VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.9 pd=4.2 as=0.45 ps=2.1 w=1.5 l=0.3
+X517 a_13490_28700# uo_out[4] a_13330_28700# VDPWR sky130_fd_pr__pfet_01v8 ad=1.5 pd=6.2 as=0.75 ps=3.1 w=2.5 l=0.2
+X518 a_18130_27340# VDPWR VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.3
+X519 VDPWR uo_out[6] a_9970_30640# VDPWR sky130_fd_pr__pfet_01v8 ad=0.36 pd=1.8 as=0.36 ps=1.8 w=1.2 l=0.2
+X520 a_13290_24700# newdene_0.AND_0.out a_13110_24700# VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.3 ps=1.6 w=1 l=0.3
+X521 a_10870_26360# VDPWR VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.9 ps=4.2 w=1.5 l=0.3
+X522 a_12950_28700# a_12430_30640# VGND VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.6 ps=3.2 w=1 l=0.2
+X523 a_9570_26000# uo_out[6] VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.45 pd=2.1 as=0.9 ps=4.2 w=1.5 l=0.3
+X524 VGND a_13950_28660# a_13830_29600# VGND sky130_fd_pr__nfet_01v8 ad=0.6 pd=3.2 as=0.3 ps=1.6 w=1 l=0.2
+X525 a_9570_27340# VDPWR VGND VGND sky130_fd_pr__nfet_01v8 ad=0.3 pd=1.6 as=0.6 ps=3.2 w=1 l=0.3
+C0 VDPWR ui_in[5] 2.27024f
+C1 uo_out[3] uo_out[2] 2.3075f
+C2 uio_in[4] uio_in[3] 4.86574f
+C3 ui_in[3] ui_in[4] 11.4294f
+C4 rst_n clk 4.24531f
+C5 VDPWR uo_out[5] 2.72444f
+C6 VDPWR ui_in[6] 2.33553f
+C7 VDPWR uo_out[6] 2.71343f
+C8 uo_out[6] uo_out[7] 2.76948f
+C9 uio_in[0] uio_in[1] 7.36308f
+C10 VDPWR ua[1] 2.98155f
+C11 newdene_0.AND_0.out VDPWR 6.74989f
+C12 ui_in[5] ui_in[4] 10.1513f
+C13 ui_in[3] ui_in[2] 5.30602f
+C14 ui_in[1] ui_in[0] 6.32215f
+C15 uio_in[1] uio_in[2] 7.91975f
+C16 a_12280_12070# VDPWR 2.25453f
+C17 uo_out[4] VDPWR 2.70928f
+C18 ui_in[1] VDPWR 2.15213f
+C19 VDPWR uo_out[7] 3.02149f
+C20 ui_in[0] rst_n 4.36049f
+C21 ui_in[5] ui_in[6] 8.62107f
+C22 VDPWR uo_out[2] 2.71758f
+C23 VDPWR rst_n 8.06435f
+C24 uo_out[4] uo_out[3] 2.31839f
+C25 VDPWR ui_in[4] 2.2007f
+C26 VDPWR newdene_0.AND_0.b 2.67185f
+C27 uo_out[5] uo_out[6] 2.25251f
+C28 VDPWR uo_out[1] 2.54999f
+C29 VDPWR uo_out[3] 2.73443f
+C30 uo_out[1] uo_out[0] 2.06626f
+C31 ui_in[1] ui_in[2] 5.94042f
+C32 uio_in[3] uio_in[2] 7.42694f
+C33 uo_out[4] uo_out[5] 2.24516f
+C34 VDPWR ui_in[2] 2.06067f
+C35 ui_in[3] VGND 13.8487f
+C36 ui_in[4] VGND 8.88162f
+C37 ui_in[5] VGND 8.7992f
+C38 ui_in[6] VGND 14.7391f
+C39 ui_in[0] VGND 14.2387f
+C40 ui_in[1] VGND 10.895f
+C41 ua[0] VGND 9.05402f
+C42 ua[1] VGND 11.8125f
+C43 ui_in[2] VGND 9.84978f
+C44 uio_in[0] VGND 16.9606f
+C45 uio_in[1] VGND 12.9615f
+C46 uio_in[2] VGND 14.2353f
+C47 uio_in[3] VGND 16.7846f
+C48 uio_in[4] VGND 25.6245f
+C49 clk VGND 26.4159f
+C50 rst_n VGND 34.4248f
+C51 uo_out[0] VGND 9.68704f
+C52 uo_out[1] VGND 7.99858f
+C53 uo_out[2] VGND 7.21128f
+C54 uo_out[3] VGND 7.04299f
+C55 uo_out[4] VGND 7.76497f
+C56 uo_out[5] VGND 8.6827f
+C57 uo_out[6] VGND 8.92291f
+C58 uo_out[7] VGND 11.4473f
+C59 VDPWR VGND 0.31584p
+C60 a_9680_11100# VGND 4.05456f 
+C61 a_14750_10750# VGND 2.92088f 
+C62 a_12280_12070# VGND 4.49206f
+C63 a_9350_14670# VGND 7.89181f 
+C64 newdene_0.AND_0.b VGND 19.4539f 
+C65 a_7750_10880# VGND 2.81414f 
+C66 a_7660_15880# VGND 3.00683f 
+C67 a_17890_17370# VGND 2.66712f 
+C68 newdene_0.AND_0.out VGND 23.4742f 
+C69 a_7010_25120# VGND 2.17842f 
+C70 a_7190_27660# VGND 2.30972f 
+C71 a_18850_30640# VGND 2.5574f 
+C72 a_16710_30640# VGND 2.55606f 
+C73 a_14570_30640# VGND 2.55578f
+C74 a_12430_30640# VGND 2.55628f 
+C75 a_10290_30640# VGND 2.55578f 
+C76 ua[1] VGND 51pF
+
+
+
+.tran 1n 5000ns
+
+.end
