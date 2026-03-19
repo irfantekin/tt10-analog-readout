@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1773921891
+timestamp 1773923582
 << metal1 >>
 rect 4155 15175 4235 15190
 rect 4155 15125 4170 15175
@@ -635,9 +635,9 @@ rect 11317 0 11407 100
 rect 13210 0 13390 3230
 rect 15170 0 15280 4055
 use newdene  newdene_0
-timestamp 1773757554
+timestamp 1773923582
 transform 1 0 3315 0 1 12020
-box -220 -8465 10755 3570
+box -295 -8465 10755 3570
 << labels >>
 flabel metal4 s 14383 22476 14413 22576 0 FreeSans 240 90 0 0 clk
 port 0 nsew signal input
