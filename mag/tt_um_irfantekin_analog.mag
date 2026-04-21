@@ -1,6 +1,9 @@
 magic
 tech sky130A
-timestamp 1776783833
+timestamp 1776784924
+<< error_s >>
+rect 9615 9190 9925 9215
+rect 9640 9160 9895 9185
 << metal1 >>
 rect 4155 15175 4235 15190
 rect 4155 15125 4170 15175
@@ -638,7 +641,7 @@ rect 11317 0 11407 100
 rect 13210 0 13390 3230
 rect 15170 0 15280 4055
 use newdene  newdene_0
-timestamp 1776783833
+timestamp 1776784924
 transform 1 0 3315 0 1 12020
 box -295 -8790 10755 3570
 << labels >>
