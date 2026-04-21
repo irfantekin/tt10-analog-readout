@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1776782826
+timestamp 1776783833
 << nwell >>
 rect 455 -4675 645 -4125
 rect 455 -5085 1015 -4675
@@ -348,7 +348,6 @@ rect 1135 -4895 1155 -4795
 rect 1235 -4895 1255 -4795
 rect 1135 -4910 1255 -4895
 rect 975 -5170 1455 -5105
-rect 6320 -5165 6360 -5065
 rect 945 -5205 1455 -5170
 rect 945 -5220 985 -5205
 rect 570 -5460 610 -5330
@@ -875,7 +874,7 @@ rect 6195 -6485 6350 -6465
 rect 4735 -6915 4820 -6870
 rect 1230 -6970 1285 -6960
 rect 1635 -6970 1705 -6965
-rect 965 -7030 1835 -6970
+rect 965 -7030 1705 -6970
 rect 4735 -6985 4785 -6915
 rect 1635 -7265 1705 -7030
 rect 1635 -7305 1650 -7265
@@ -1256,47 +1255,47 @@ rect 4875 -7405 4995 -7385
 rect 6765 -8790 6925 -5085
 rect 7370 -7965 7490 -4415
 use 2nand1  2nand1_0
-timestamp 1773142144
+timestamp 1776783833
 transform 1 0 2745 0 1 -6055
 box -235 -800 320 1365
 use AND  AND_0
-timestamp 1773923582
+timestamp 1776783833
 transform 1 0 6830 0 1 -7210
 box -1450 750 -1020 1300
 use compnew  compnew_0
-timestamp 1776781251
+timestamp 1776783833
 transform 1 0 5691 0 1 -5835
-box -586 965 2784 3115
+box -586 965 2784 6085
 use counnew  counnew_0
-timestamp 1773179873
+timestamp 1776783833
 transform 1 0 3285 0 1 -6130
 box -3505 6130 4975 9700
 use csvc  csvc_0
-timestamp 1773149996
+timestamp 1776783833
 transform 1 0 -1529 0 1 -4375
 box 2814 -555 3984 1325
 use pdvc  pdvc_0
-timestamp 1776782826
+timestamp 1776783833
 transform 1 0 -1055 0 1 -7680
 box 1910 -785 4390 510
 use pulsedelay  pulsedelay_0
-timestamp 1773142144
+timestamp 1776783833
 transform 1 0 1406 0 1 -6255
 box -31 -450 1014 1170
 use sw1cs  sw1cs_0
-timestamp 1773142144
+timestamp 1776783833
 transform 1 0 4625 0 1 -7095
 box -500 2295 30 3310
 use sw2cs  sw2cs_0
-timestamp 1773142144
+timestamp 1776783833
 transform 1 0 4765 0 1 -6520
 box -635 465 -35 1475
 use sw3cs  sw3cs_0
-timestamp 1773142144
+timestamp 1776783833
 transform 1 0 4485 0 1 -5025
 box -410 -3140 325 -1795
 use sw  sw_0
-timestamp 1773142144
+timestamp 1776783833
 transform 1 0 3830 0 1 -5090
 box -390 -2690 90 1275
 << labels >>
