@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1776784976
+timestamp 1778498211
 << nwell >>
 rect 455 -4675 645 -4125
 rect 455 -5085 1015 -4675
@@ -1258,7 +1258,7 @@ timestamp 1776784924
 transform 1 0 6830 0 1 -7210
 box -1450 750 -1020 1300
 use compnew  compnew_0
-timestamp 1776784924
+timestamp 1778498211
 transform 1 0 5691 0 1 -5835
 box -586 965 2784 6085
 use counnew  counnew_0
